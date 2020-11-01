@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <title>COVID-19 Graphical Representation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 93vh;
+        }
+
+
+        #marker {
+            position: absolute;
+            background-image: url('url.png');
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #marker:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        #marker:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: inherit;
+            content: ' ';
+        }
+        .country{
+            position: absolute;
+            background-color :#555551;
+            width: 100vw;
+            height: 7vh;
+            
+        }
+        .country a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            position: relative;
+            top: 8px;
+            left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+    <div class="country">
+        <p>
+           <a href="/district.html">Click to get state-wise data(India)</a> 
+        </p>
+    </div>
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidmFpYmhhdnM4MjgiLCJhIjoiY2tmM2kzdXU3MDNqYzJwcWVkMmJlZ3ZrcSJ9.2_jGbUOc6DbME3Y8imHg7A';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        zoom: 1,
+    });
+</script>
+
+
+<script src="index.js"></script>
+
+</html>

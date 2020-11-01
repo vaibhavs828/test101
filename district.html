@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Cases(India)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="district1.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3" >
+        <a class="navbar-brand pl-4" href="#" id="nm" >Covid Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Q&A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">World Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  
+  <section class="corona_update ">
+          <div class="mb-3 mt-5">
+            <h3 class="text-uppercase text-center">Covid-19 updates(INDIA)</h2>
+          </div>
+
+          <div class="d-flex justify-content-around align-items-center">
+          <div>
+              <h1 class="count" id="total"></h1>
+              <p>Total Covid-19 Cases</p>
+          </div>
+          <div>
+            <h1 class="count" id="active"></h1>
+            <p>Active Covid-19 Cases</p>
+        </div>
+        <div>
+            <h1 class="count" id="discharged"></h1>
+            <p>Recovered Covid-19 Cases</p>
+        </div>
+        <div>
+            <h1 class="count" id="deaths"></h1>
+            <p>Total Deaths</p>
+        </div>
+    </div>
+      </section>
+    
+    
+
+      <div class="table-responsive">
+      <table class="table table-striped ">
+        <tr  class="bg-info">
+            <th>State</th>
+            <th>Total</th>
+            <th>Active</th>
+            <th>Recovered</th>
+            <th>Deaths</th>
+        </tr>
+
+        <tbody id="myTable">
+        
+        </tbody>
+
+    </table>
+  </div>
+
+
+    <footer>
+        <div class="footer_style text-white text-center container-fluid">
+            <p>© - Half Blood Prince</p>
+        </div>
+    </footer>
+
+    <script src="district.js"></script>
+</body>
+
+</html>
+
+
+
+<!--    <div class="row">
+        <div class="col">
+            <div class="card card-body">
+                <input id="search-input" class="form-control" type="text">
+            </div>
+        </div>
+    </div>-->

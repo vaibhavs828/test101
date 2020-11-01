@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+#nm{
+    letter-spacing: 3px;
+}
+.corona_update{
+    margin: 10px 0 30px 0;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .corona_update {
+        font-size: 0.9rem; text-align: center;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .corona_update {
+        font-size: 0.6rem; text-align: center;
+    }
+  }
+
+/*MEDIA QUERIES FOR BOXES*/
+
+  /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    #total {
+        font-size: 1.2rem; text-align: center;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    #total {
+        font-size: 0.7rem; text-align: center;
+    }
+  }
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+    #active {
+        font-size: 1.2rem; text-align: center;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    #active {
+        font-size: 0.7rem; text-align: center;
+    }
+  }
+    /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    #discharged {
+        font-size: 1.2rem; text-align: center;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    #discharged {
+        font-size: 0.7rem; text-align: center;
+    }
+  }
+    /* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    #deaths {
+        font-size: 1.2rem; text-align: center;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    #deaths {
+        font-size: 0.7rem; text-align: center;
+    }
+  }
+
+
+
+
+
+.corona_update h3{
+    color: #ff7675;
+    margin-bottom: 30px;
+}
+.corona_update h1{
+    font-size: 2rem; text-align: center;
+}
+
+#total{
+    color: rgb(23, 23, 61);
+}
+#active{
+    color: indianred;
+}
+#discharged{
+    color: green;
+}
+#deaths{
+    color: red;
+}
+
+
+
+.footer_style{
+    background-color: #343a40!important;
+}
+.footer_style p{
+    margin-bottom: 0!important;
+}
